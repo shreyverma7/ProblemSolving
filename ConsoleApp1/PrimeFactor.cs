@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ProblemSolving
+    
 {
     internal class PrimeFactor
     {
@@ -26,7 +27,7 @@ namespace ProblemSolving
                 }
             }
 
-            if (number > 1)
+            if (number > 1)   
             {
                 Console.WriteLine(number);
             }

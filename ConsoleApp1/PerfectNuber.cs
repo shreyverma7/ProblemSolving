@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProblemSolving
 {
+    //28 = 1+2+4+7
     internal class PerfectNuber
     {
         public void  isPerfectNuber() {
@@ -30,9 +31,9 @@ namespace ProblemSolving
         {
             int sum = 0;
 
-            for (int i = 1; i <= number / 2; i++)
+            for (int i = 1; i <= number / 2; i++)   //Divide upto  half because contain same value if we run for full
             {
-                if (number % i == 0)
+                if (number % i == 0)  //Check with itetaration numbers
                 {
                     sum += i;
                 }

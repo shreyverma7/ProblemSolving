@@ -29,7 +29,7 @@ namespace ProblemSolving
                 
             }
             Console.WriteLine("Percentage of Head : " + (headcount * 100)/num);
-            Console.WriteLine("Percentage of tail : " + (taiCount * 100) / num); ;
+            Console.WriteLine("Percentage of tail : " + (taiCount * 100) / num); 
 
         }
 

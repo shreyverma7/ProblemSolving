@@ -22,7 +22,7 @@ namespace ProblemSolving
 
             for (int i = 0; i <= N; i++)
             {
-                int power = (int)Math.Pow(2, i);
+                int power = (int)Math.Pow(2, i);  //Usinng power function
                 Console.WriteLine("2^" + i + " = " + power);
             }
         }

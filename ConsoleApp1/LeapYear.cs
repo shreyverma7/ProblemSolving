@@ -28,8 +28,9 @@ namespace ProblemSolving
         public bool CheckLeapYear(int year)
         {
             // A year is a leap year if it is divisible by 4,
-            // except for years that are divisible by 100 but not divisible by 400.
-            return (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0));
+            //except for century years years ending with 00)   leap year only if it is perfectly divisible by 400
+
+            return (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0)); 
         }
     }
 }

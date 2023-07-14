@@ -15,8 +15,8 @@ namespace ProblemSolving
             Console.WriteLine("Enter divisor: ");
             int divisor = Convert.ToInt32(Console.ReadLine());
 
-            int quotient = dividend / divisor;
-            int remainder = dividend % divisor;
+            int quotient = dividend / divisor;  //To find quotiet
+            int remainder = dividend % divisor;  //To find remainder
 
             Console.WriteLine("Quotient: " + quotient);
             Console.WriteLine("Remainder: " + remainder);

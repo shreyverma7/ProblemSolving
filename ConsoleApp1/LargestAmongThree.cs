@@ -20,7 +20,7 @@ namespace ProblemSolving
             Console.Write("Number 3: ");
             int number3 = Convert.ToInt32(Console.ReadLine());
 
-            int largestNumber = Math.Max(Math.Max(number1, number2), number3);
+            int largestNumber = Math.Max(Math.Max(number1, number2), number3);  //First compare n1 and n2 then output of this with n3
 
             Console.WriteLine("The largest number is: " + largestNumber);
 
