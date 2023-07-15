@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Emit;
 using System.Transactions;
 
 namespace ProblemSolving
@@ -9,8 +10,9 @@ namespace ProblemSolving
         private static void Main(string[] args)
         {
             Console.WriteLine("Problem solving!");
+           
             Console.WriteLine("\n1.flipCoinPercentage \n2.Largest among threee \n3.divide \n4.LeapYear \n5.Haromonic Number \n6.PowerOFtwo \n7.perfectNumber \n8.reverseNumber \n9.Stop Clock \n10.Prime Factor \n11.Coupon Number \n12.Domination with money \n13.Temprature Conversion \n14.Monthly Payment  \n15.Find Out day");
-            Console.WriteLine("Enter an Number :");
+            Console.WriteLine("Enter an Input from menu :");
             int num = Convert.ToInt32(Console.ReadLine());
 
               switch (num) {
@@ -53,12 +55,12 @@ namespace ProblemSolving
 
                   case 9:
                     StopClock clock = new StopClock();
-                    clock.checkStopClock();    // (NOT COMPLETED)
+                    clock.checkStopClock();    
                     break;
 
                   case 10:
                     PrimeFactor primeFactor = new PrimeFactor();
-                    primeFactor.ToPrimeFactor();  //Not Completed
+                    primeFactor.ToPrimeFactor(); 
                     break;
 
                   case 11:
@@ -81,12 +83,17 @@ namespace ProblemSolving
                   case 15:
                     FindDayOfDate findDayOfDate = new FindDayOfDate();  
                     findDayOfDate.FindDays();
-                    return;
+                    break;
+                 default:
+                    Console.WriteLine("Enter a vaild input :");
+                  
+                    break;
+                    
 
 
 
 
-              }
+            }
               
 
 

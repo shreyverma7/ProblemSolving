@@ -10,27 +10,49 @@ namespace ProblemSolving
     internal class PrimeFactor
     {
         public void ToPrimeFactor() {
+            Console.WriteLine("Prime factor number: ");
             Console.WriteLine("Enter a number: ");
             int number = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Prime factors of " + number + ":");
             ComputePrimeFactors(number);
         }
-        public void ComputePrimeFactors(int number)
+        public void ComputePrimeFactors(int n)
         {
-            for (int i = 2; i * i <= number; i++)
+            
+           
+
+
+
+
+            // Print the number of 2s that divide n
+            while (n % 2 == 0)
             {
-                while (number % i == 0)
+                Console.Write(2 + " ");
+                n /= 2;
+            }
+
+            // n must be odd at this point. So we can
+            // skip one element (Note i = i +2)
+            for (int i = 3; i <= Math.Sqrt(n); i += 2)
+            {
+                // While i divides n, print i and divide n
+                while (n % i == 0)
                 {
-                    Console.WriteLine(i);
-                    number /= i;
+                    Console.Write(i + " ");
+                    n /= i;
                 }
             }
 
-            if (number > 1)   
-            {
-                Console.WriteLine(number);
-            }
+            // This condition is to handle the case when
+            // n is a prime number greater than 2
+            if (n > 2)
+                Console.Write(n);
         }
+
+       
+        
     }
-}
+ }
+
+
